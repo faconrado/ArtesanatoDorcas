@@ -1,0 +1,96 @@
+@media (max-width: 575.98px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+
+
+.hero {
+  min-height: 100vh;  
+  font-family: 'Arial', sans-serif;
+  padding: 40px;  
+  display: flex;
+  transition: 0.3s;
+  
+
+  background-image: url('img/backgroundWomanTrico.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.apresentacao {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+
+    padding: 18px 24px;
+}
+
+.apresentacao p {
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    margin: 0;
+}
+
+.menuHeader {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  padding: 18px 24px;
+}
+
+.nav_site {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.featureSwiper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: clamp(24px, 4vw, 72px);
+  position: relative;
+  overflow: hidden;
+  background-color: #89CFF0;
+}
+
+.swiper {
+  width: auto;
+  height: 1000px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
