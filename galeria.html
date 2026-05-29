@@ -17,6 +17,7 @@
         </header>
 
         <section class="featureSwiper">
+
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./img/2.webp" alt="Imagem 1"></div>
@@ -29,6 +30,20 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-scrollbar"></div>
                 </div>
+
+            <section class="btAdicionar">
+
+                <!-- Container do Swiper --> 
+                <div class="swiper-wrapper" id="swiperWapper"></div>
+
+                <!-- Botão visível na tela-->
+                <button id="btnAdicionar">Adionar Imagem</button>
+
+                <!-- input de arquivo oculto (accept="image/*" restringe apenas para imagem)-->
+                <input type="file" id="inputArquivo" accept="image/*" style="display: none;">
+
+            </section>
+
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
