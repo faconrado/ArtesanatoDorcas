@@ -19,38 +19,29 @@
         <section class="featureSwiper">
 
             <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./img/2.webp" alt="Imagem 1"></div>
-                    <div class="swiper-slide"><img src="./img/mesaFesta.webp" alt="Imagem 2"></div>
-                    <div class="swiper-slide"><img src="img/WhatsApp Image 2026-03-09 at 22.53.40 (3).webp" alt="Imagem 3"></div>
-                    
+                <!-- Adicionado o ID correto aqui onde o Swiper gerencia os slides -->
+                <div class="swiper-wrapper" id="swiperWrapper">
+                    <!-- Os slides serão adicionados dinamicamente aqui -->
                 </div>
+                
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-scrollbar"></div>
-                </div>
+            </div>
 
             <section class="btAdicionar">
+                <!-- Botão visível na tela -->
+                <button id="btnAdicionar">Adicionar Imagem</button>
 
-                <!-- Container do Swiper --> 
-                <div class="swiper-wrapper" id="swiperWapper"></div>
-
-                <!-- Botão visível na tela-->
-                <button id="btnAdicionar">Adionar Imagem</button>
-
-                <!-- input de arquivo oculto (accept="image/*" restringe apenas para imagem)-->
+                <!-- Input de arquivo oculto -->
                 <input type="file" id="inputArquivo" accept="image/*" style="display: none;">
-
             </section>
 
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-        <script src="./script.js"></script>
-
-
-
-
+        <!-- IMPORTANTE: Adicionado o type="module" para permitir o uso do Firebase -->
+        <script type="module" src="./script.js"></script>
     </body>
 </html>
