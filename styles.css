@@ -75,7 +75,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: #00f3ff; /* Cor acesa (ciano) igual ao seu título principal */
 }
 
-.featureSwiper {
+/*.featureSwiper {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ img { max-width: 100%; height: auto; display: block; }
   position: relative;
   overflow: hidden;
   background-color: #89CFF0;
-}
+}*/
 
 .swiper {
   width: auto;
