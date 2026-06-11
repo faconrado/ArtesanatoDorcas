@@ -13,18 +13,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 
 .hero {
-  min-height: 100vh;  
-  font-family: 'Arial', sans-serif;
-  padding: 40px;  
-  display: flex;
-  transition: 0.3s;
-  
-
-  background-image: url('img/backgroundWomanTrico.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/riscos-de-flores-para-pintura.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 40px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero::before {
@@ -35,42 +32,47 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .apresentacao {
-    position: absolute;
-    top: 50px;
-    left: 0px;
-    right: 0px;
-    z-index: 10;
+  max-width: 600px;
+}
 
-    padding: 18px 24px;
+.apresentacao h1 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 42px;
+  color: #00f3ff; /* O ciano vibrante da sua imagem */
+  margin: 0 0 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para ler bem sobre o fundo */
 }
 
 .apresentacao p {
-    margin: 20px;
-    color: white;
-    font-size: 20px;
-}
-
-h1 {
-    font-size: 48px;
-    color: white;
-    margin: 0;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 18px;
+  color: #99ffcc; /* O tom verde-água claro do seu subtítulo */
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .menuHeader {
   position: absolute;
   top: 20px;
-  left: 0;
-  right: 0;
-  z-index: 10;
-
-  padding: 18px 24px;
+  right: 40px;
 }
 
 .nav_site {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  color: white;
+  gap: 24px;  
+}
+
+.nav_site a {
+  color: #ffffff; /* Muda de roxo para branco */
+  text-decoration: none; /* Remove o sublinhado antigo */
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.nav_site a:hover {
+  color: #00f3ff; /* Cor acesa (ciano) igual ao seu título principal */
 }
 
 .featureSwiper {
