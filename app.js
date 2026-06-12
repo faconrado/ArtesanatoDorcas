@@ -54,15 +54,15 @@ function adicionarSlideNaTela(urlElemento) {
 onAuthStateChanged(auth, (user) => {
   if (user) {
     // Se o Administrador está logado:
-    btnAdicionar.style.display = "block"; // Mostra botão de postar foto
-    btnDeslogar.style.style.display = "inline-block"; // Mostra botão de Sair
-    areaLogin.style.display = "none";     // Esconde o formulário de login
-    btnExibirLogin.style.display = "none"; // Esconde o botão discreto "Acesso Restrito"
+    if(btnAdicionar) btnAdicionar.style.display = "block"; // Mostra botão de postar foto
+    if(btnDeslogar) btnDeslogar.style.display = "inline-block"; // Mostra botão de Sair
+    if(areaLogin) areaLogin.style.display = "none";     // Esconde o formulário de login
+    if(btnExibirLogin) btnExibirLogin.style.display = "none"; // Esconde o botão discreto "Acesso Restrito"
   } else {
     // Se for um visitante comum:
-    btnAdicionar.style.display = "none";  // Esconde o botão de postar foto
-    btnDeslogar.style.display = "none";   // Esconde o botão de Sair
-    btnExibirLogin.style.display = "block"; // Deixa o "Acesso Restrito" disponível
+    if(btnAdicionar) btnAdicionar.style.display = "none";  // Esconde o botão de postar foto
+    if(btnDeslogar) btnDeslogar.style.display = "none";   // Esconde o botão de Sair
+    if(btnExibirLogin) btnExibirLogin.style.display = "block"; // Deixa o "Acesso Restrito" disponível
   }
 });
 
