@@ -56,7 +56,9 @@
   }
 
   .img-informativo img {
+    max-height: 300px;
     width: auto;
     object-fit: contain;
+    position: relative;
   }
 }
