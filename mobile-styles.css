@@ -34,6 +34,7 @@
   .nav_site {
     justify-content: center;
     gap: 16px;
+    padding: 10px;
   }
 
   /* Ajusta o tamanho do carrossel para caber perfeitamente na tela do celular */
@@ -47,5 +48,15 @@
     max-height: 100%;
     width: auto;
     object-fit: contain; /* Mantém a proporção original da foto */
+  }
+  .cartao-informativo{
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .img-informativo img {
+    width: auto;
+    object-fit: contain;
   }
 }
