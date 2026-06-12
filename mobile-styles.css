@@ -24,7 +24,8 @@
 
   /* Remove o posicionamento absoluto do menu para ele não atropelar o título */
   .menuHeader {
-    position: static; /* Volta ao fluxo normal do HTML */
+    position: relative; /* Volta ao fluxo normal do HTML */
+    z-index: 10;
     margin: 20px auto 0 auto;
     width: 100%;
   }
