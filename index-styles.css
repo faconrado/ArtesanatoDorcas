@@ -1,0 +1,48 @@
+.cartao-informativo {
+    font-family: 'Helvetica', sans-serif;
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.img-informativo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.noticia-informativo {
+    padding: 16px;
+}
+
+.titulo-informativo {
+    font-size: 18px;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.metadados-informativo {
+    font-size: 14px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .cartao-informativo{
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .img-informativo img {
+        height: 160px;
+    }
+}

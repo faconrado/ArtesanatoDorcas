@@ -1,0 +1,50 @@
+/* =========================================
+   MEDIA QUERY: Ajustes para Celulares e Tablets
+   ========================================= */
+@media (max-width: 768px) {
+  
+  /* Reduz o espaçamento interno do hero para sobrar espaço na tela */
+  .hero {
+    padding: 40px 16px;
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  /* Reduz o tamanho das fontes para não quebrarem de forma estranha */
+  .apresentacao h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .apresentacao p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Remove o posicionamento absoluto do menu para ele não atropelar o título */
+  .menuHeader {
+    position: static; /* Volta ao fluxo normal do HTML */
+    margin: 20px auto 0 auto;
+    width: 100%;
+  }
+
+  /* Alinha os links do menu centralizados no mobile */
+  .nav_site {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* Ajusta o tamanho do carrossel para caber perfeitamente na tela do celular */
+  .swiper {
+    height: 400px; /* Altura muito mais amigável para mobile */
+    width: 100%;
+  }
+
+  /* Garante que as imagens do carrossel se adaptem sem distorcer */
+  .swiper-slide img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain; /* Mantém a proporção original da foto */
+  }
+}
