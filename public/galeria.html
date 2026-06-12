@@ -24,6 +24,18 @@
 
         <section class="featureSwiper">
 
+            <section id="areaLogin" style="margin-top: 20px; text-align: center; display: none;">
+                <h3 style="color: #fff;">Área do Administrador</h3>
+                <input type="email" id="loginEmail" placeholder="E-mail" style="padding: 8px; margin: 5px; border-radius: 4px; border: none;">
+                <input type="password" id="loginSenha" placeholder="Senha" style="padding: 8px; margin: 5px; border-radius: 4px; border: none;">
+                <button id="btnLogar" style="padding: 8px 15px; background-color: #00f3ff; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Entrar</button>
+            </section>
+
+            <footer style="text-align: center; margin-top: 40px; padding: 20px;">
+                <button id="btnExibirLogin" style="background: none; border: none; color: rgba(255,255,255,0.3); cursor: pointer; font-size: 12px;">Acesso Restrito</button>
+                <button id="btnDeslogar" style="display: none; background: #ff4d4d; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">Sair do Modo Admin</button>
+            </footer>
+
             <div class="swiper">
                 <!-- Adicionado o ID correto aqui onde o Swiper gerencia os slides -->
                 <div class="swiper-wrapper" id="swiperWrapper"></div><!-- Os slides serão adicionados dinamicamente aqui -->
@@ -36,7 +48,7 @@
 
             <section class="btAdicionar">
                 <!-- Botão visível na tela -->
-                <button id="btnAdicionar">Adicionar Imagem</button>
+                <button id="btnAdicionar" style="display: none;">Adicionar Imagem</button>
 
                 <!-- Input de arquivo oculto -->
                 <input type="file" id="inputArquivo" accept="image/*" style="display: none;">
