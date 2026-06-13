@@ -5,12 +5,12 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstati
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC8GI5DCS-qsjqNcSqQVzPRJBhnWJDtYmw",
-  authDomain: "galeriaartesanatodorcas.firebaseapp.com",
-  projectId: "galeriaartesanatodorcas",
-  storageBucket: "galeriaartesanatodorcas.firebasestorage.app",
-  messagingSenderId: "1069158701689",
-  appId: "1:1069158701689:web:a163225b66ba80f52812a8"
+  apiKey: "AIzaSyDlcqFhHAyXCF3ocI1VyuxKaYwfLg1AOiQ",
+  authDomain: "oficina-de-artesanato-dorcas.firebaseapp.com",
+  projectId: "oficina-de-artesanato-dorcas",
+  storageBucket: "oficina-de-artesanato-dorcas.firebasestorage.app",
+  messagingSenderId: "112404311842",
+  appId: "1:112404311842:web:bf8b3a2c0070493db7ff7b"
 };
 
 const app = initializeApp(firebaseConfig);
