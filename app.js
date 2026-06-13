@@ -10,7 +10,7 @@ const firebaseConfig = {
   projectId: "galeriaartesanatodorcas",
   storageBucket: "galeriaartesanatodorcas.firebasestorage.app",
   messagingSenderId: "1069158701689",
-  appId: "1:1069158701689:web:283088e85a001a5a2812a8"
+  appId: "1:1069158701689:web:a163225b66ba80f52812a8"
 };
 
 const app = initializeApp(firebaseConfig);
